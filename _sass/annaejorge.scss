@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+$base-font-color:   #333 !default;
+
+$blue: #568CA8;
+$light-blue: #99B7C0;
+$rose: #F08080;
+$gray: #B4B4B8;
+$light-gray: #eeeeee;
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+html, body, main, .wrapper{
+  height: 100%;
+  min-height: 100%;
+}
+
+body{
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  background: #FFF;
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80%;
+}
+.infos{
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+}
+
+h1{
+  color: $blue;
+  font-family: 'Lobster Two', cursive;
+  font-size: 7em;
+  font-weight: 400;
+}
+
+h2, p{
+  font-weight: 200;
+  font-size: 2em;
+}
+
+h2{
+  font-size: 2em;
+  color: $rose;
+}
+p{
+  font-size: 1.2em;
+  color: $base-font-color;
+}
+
